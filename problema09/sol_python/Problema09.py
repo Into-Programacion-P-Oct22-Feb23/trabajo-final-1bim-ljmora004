@@ -17,7 +17,7 @@ if numero <= 8:
 		elif contador % 2 == 0:
 			negativos = negativos + termino_negativo
 			mensaje = mensaje + str(negativos)
-	contador = contador + 1
+		contador = contador + 1
 else:
 	print("Error, el número de términos que escogió no existe.")
 
