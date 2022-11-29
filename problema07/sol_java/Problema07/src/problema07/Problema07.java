@@ -16,16 +16,19 @@ public class Problema07 {
         System.out.println("Ingrese hasta que número desea sumar: ");
         numero = entrada.nextDouble();
 
-        if (numero >= 2) {
-            while (contador <= numero) {
-                resultado = contador + 2;
-                contador = contador + 2;
+        if (numero % 2 == 0) {
+            if (numero >= 2) {
+                while (contador <= numero) {
+                    resultado = contador + 2;
+                    contador = contador + 2;
+                }
+            } else {
+                System.out.println("Error, el número ingresado es menor a 2."
+                        + "\nIntentelo de nuevo.");
             }
         } else {
-            System.out.println("Error, el número ingresado es menor a 2."
-                    + "\nIntentelo de nuevo.");
+            System.out.println("Error, el número ingresado no es par.");
         }
-
         System.out.printf("La suma de los números pares hasta el "
                 + "número %.2f es: %.2f\n", numero, resultado);
     }
